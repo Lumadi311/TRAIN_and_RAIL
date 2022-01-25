@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">TRAIN&amp;RAIL</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="Train_names">
+        <item> First Class</item>
+        <item>Economy Class</item>
+        <item>Special Ticket</item>
+
+    </string-array>
+
+    <array name="Train_images">
+        <item>@drawable/sgrtrain</item>
+        <item>@drawable/sgrtrain</item>
+        <item>@drawable/sgrtrain</item>
+        <item>@drawable/sgrtrain</item>
+        <item>@drawable/sgrtrain</item>
+        <item>@drawable/sgrtrain</item>
+        <item>@drawable/sgrtrain</item>
+        <item>@drawable/sgrtrain</item>
+    </array>
+
+    <string-array name="Train_routes">
+        <item> Nairobi - Mombasa </item>
+        <item> Nairobi - Mtito Andei </item>
+        <item> Mombasa - Nairobi </item>
+        <item> Athi River - Voi </item>
+        <item> Nairobi - Miasenyi </item>
+        <item> Kibwezi - Mombasa</item>
+        <item> Emali - Miasenyi </item>
+        <item> Miasenyi - Mombasa </item>
+    </string-array>
+
+    <string-array name="Train_time">
+        <item> Nairobi - Mombasa: 9.00PM </item>
+        <item> Nairobi - Mtito Andei : 8.00PM </item>
+        <item> Mombasa - Nairobi : 7.00PM </item>
+        <item> Athi River - Voi : 6.00PM </item>
+        <item> Nairobi - Miasenyi : 7.00AM </item>
+        <item> Kibwezi - Mombasa: 8.00AM </item>
+        <item> Emali - Miasenyi : 9.00AM </item>
+        <item> Miasenyi - Mombasa : 10.00AM </item>
+    </string-array>
+    <string name="title_activity_point">PointActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+</resources>

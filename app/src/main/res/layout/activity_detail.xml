@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trainbackground"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:src="@drawable/icone2"-->
+        <!--android:layout_marginTop="10dp"/>-->
+
+        <TextView
+            android:id="@+id/trainDetailName1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="TRAIN AND RAIL"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:background="@color/priya"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/trainDetailDate1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="No Booking Data......"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/trainDetailFrom1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="No Booking Data......"
+            android:textStyle="italic"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/trainDetailTo1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="No Booking Data......"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/trainDetailCondition1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="italic"
+            android:text="No Booking Data......"
+            android:background="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/bookingDetail1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/priya"
+            android:textAlignment="center"
+            android:text="Booking Detail"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/bookingDetailFrom1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="No Booking Data......"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/bookingDetailTo1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="No Booking Data......"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/ticketDetail1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/priya"
+            android:textAlignment="center"
+            android:text="Ticket Detail"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/ticketDetailNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="No Booking Data......"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/ticketDetailPrice1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="No Booking Data......"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/customerDetail1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/priya"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="Customer Details"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/customerDetailName1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="No Booking Data......"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="italic"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/customerDetailEmail1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="No Booking Data......"
+            android:textStyle="italic"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/customerDetailPhone1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="No Booking Data......"
+            android:textStyle="italic"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

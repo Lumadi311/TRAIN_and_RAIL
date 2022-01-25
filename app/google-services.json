@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "541793572995",
+    "project_id": "trainrail-98ac8",
+    "storage_bucket": "trainrail-98ac8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541793572995:android:267ea55ca19c842f1ea3b6",
+        "android_client_info": {
+          "package_name": "com.example.trainrail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541793572995-40mjse0mp491fgc2lb2qtp8ta911rf3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY8AoXz155DiYZcxmdgLL80dQuuvqlsbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541793572995-40mjse0mp491fgc2lb2qtp8ta911rf3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
