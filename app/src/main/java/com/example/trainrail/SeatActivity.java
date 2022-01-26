@@ -73,7 +73,9 @@ public class SeatActivity extends AppCompatActivity {
                 String totalPriceI=totalPrice.getText().toString().trim();
                 String totalBookedSeatsI=totalBookedSeats.getText().toString().trim();
 
-                PaymentDetail paymentDetail=new PaymentDetail(Integer.parseInt(totalPriceI),totalBookedSeatsI);
+
+
+                PaymentDetail paymentDetail=new PaymentDetail((int) Double.parseDouble(totalPriceI),totalBookedSeatsI);
                 TrainBooking booking = new TrainBooking(generateBookingId(FirebaseAuth.getInstance().getUid()),FirebaseAuth.getInstance().getUid(),train.getTrainId(),paymentDetail,train.getDate(),false);
 
                 FirebaseUser user=firebaseAuth.getCurrentUser();

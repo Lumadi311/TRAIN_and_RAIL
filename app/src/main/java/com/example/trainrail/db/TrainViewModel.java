@@ -7,6 +7,7 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
+import com.example.trainrail.PaymentModel;
 import com.example.trainrail.Train;
 import com.example.trainrail.TrainBooking;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -67,11 +68,25 @@ public class TrainViewModel extends AndroidViewModel {
         return success;
     }
 
+    private MutableLiveData<Boolean> savePaymentDetails(PaymentModel paymentModel) {
+
+        MutableLiveData<Boolean> success = new MutableLiveData<>();
+
+        db.collection("Payment").document(paymentModel.getPaymentId()).set(paymentModel).addOnCompleteListener(task -> success.setValue(task.isSuccessful()));
+
+        return success;
+    }
+
+
     public LiveData<List<Train>> getAllTrains(String from) {
         return getTrainsFromDb(from);
     }
 
     public LiveData<Boolean> createBookingDetails(TrainBooking trainBooking) {
         return saveBookingDetails(trainBooking);
+    }
+
+    public LiveData<Boolean> createPaymentDetails(PaymentModel paymentModel) {
+        return savePaymentDetails(paymentModel);
     }
 }

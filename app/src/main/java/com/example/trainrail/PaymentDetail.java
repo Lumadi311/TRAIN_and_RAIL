@@ -1,6 +1,9 @@
 package com.example.trainrail;
 
-public class PaymentDetail {
+import java.io.Serializable;
+import java.util.Calendar;
+
+public class PaymentDetail implements Serializable {
     public int total_cost;
     public String total_seats;
 
@@ -27,6 +30,7 @@ public class PaymentDetail {
     public void setTotal_seats(String total_seats) {
         this.total_seats = total_seats;
     }
+
 }
 
 

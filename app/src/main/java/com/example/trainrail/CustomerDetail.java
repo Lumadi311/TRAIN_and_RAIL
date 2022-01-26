@@ -1,6 +1,8 @@
 package com.example.trainrail;
 
-public class CustomerDetail {
+import java.io.Serializable;
+
+public class CustomerDetail implements Serializable {
     public String cus_email;
     public String cus_phone;
     public String cus_name;

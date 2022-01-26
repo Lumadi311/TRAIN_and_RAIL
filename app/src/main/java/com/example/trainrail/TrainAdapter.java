@@ -35,15 +35,8 @@ public class TrainAdapter extends RecyclerView.Adapter<TrainAdapter.ArtistViewHo
     @Override
     public void onBindViewHolder(@NonNull ArtistViewHolder holder, int position) {
         Train train = trainList.get(position);
-        SimpleDateFormat dateFormat = new SimpleDateFormat("EEE, d MMM yyyy, hh:mm aaa");
+        holder.textViewDate.setText("Journey Date : " + train.date);
 
-        try {
-            Date date = dateFormat.parse(train.date);
-            holder.textViewDate.setText("Journey Date : " + dateFormat.format(date));
-
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
 
         holder.textViewTrainName.setText(train.travelsName);
         holder.textViewTrainNumber.setText("Train Number : " + train.trainNumber);
@@ -57,13 +50,14 @@ public class TrainAdapter extends RecyclerView.Adapter<TrainAdapter.ArtistViewHo
     public int getItemCount() {
         return trainList.size();
     }
+
     public void setClickListener(ItemClickListener itemClickListener) {
         this.clickListener = itemClickListener;
     }
 
-    class ArtistViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    class ArtistViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView textViewTrainName, textViewTrainNumber, textViewDate, textViewFrom,textViewTo,textViewCondition;
+        TextView textViewTrainName, textViewTrainNumber, textViewDate, textViewFrom, textViewTo, textViewCondition;
 
         public ArtistViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -78,6 +72,7 @@ public class TrainAdapter extends RecyclerView.Adapter<TrainAdapter.ArtistViewHo
             itemView.setTag(itemView);
             itemView.setOnClickListener(this);
         }
+
         @Override
         public void onClick(View view) {
             if (clickListener != null) clickListener.onItemClick(view, getAdapterPosition());
